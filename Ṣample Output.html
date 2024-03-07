@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        #SO{
+            text-decoration: underline;
+        }
+        #p{
+            border: 2px solid black;
+            width: 400px;
+        }
+        .div input{
+            margin-bottom: 13px;
+        }
+        #sl{
+            position: relative;
+            top: 70px;
+        }
+        .radio{
+            position: relative;
+            left: 100px;
+        }
+        .checkbox{
+            position: relative;
+            left: 100px;
+        }
+        #ex{
+            position: relative;
+            top: 70px;
+        }
+        #TA{
+            position: relative;
+            left: 130px;
+            bottom: 90px;
+        }
+        #para{
+            position: relative;
+            top: 37px;
+        }
+        #file{
+            position: relative;
+            left: 130px;
+            bottom: 150px;
+        }
+        #filei{
+            position: relative;
+            bottom: 90px;
+        }
+        .button{
+            position: relative;
+            bottom: 90px;
+            right: 126px;
+        }
+        #email{
+            position: relative;
+            left: 56px;
+        }
+        #Fname,#Lname{
+            position: relative;
+            left: 25px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Output</title>
+</head>
+<body>
+    <form action="../Intenship/Result.html" method="get" id="form">
+        <h4 id="SO"><b>Sample Output:</b></h4>
+        <h4>Figure 1.HTML form for user input</h4>
+        <p id="p">BCS350 Assignment 3 -- Student Name</p>
+        <h4>Create Your Profile</h4>
+        <div class="div">
+            <label for="Fname">First Name:</label>
+            <input type="text" id="Fname" required> <br>
+            <label for="Lname">Last Name:</label>
+            <input type="text" id="Lname" required> <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required><br>
+            <label for="select">Class Standing:</label>
+            <select name="select" id="st">
+                <option value="Freshman">Freshman</option>
+                <option value="Experienced">Experienced</option>
+            </select>
+            <br>
+            <label for="schools" id="sl">Schools:</label>
+            <br>
+            <br>
+            <input type="radio" id="arts" class="radio" name="school">
+            <label for="arts" class="radio" value="">School of Arts & Science</label> <br>
+            <input type="radio" id="Bussiness" class="radio" name="school">
+            <label for="Bussiness" class="radio">School Bussiness</label><br>
+            <input type="radio" id="Engineering" class="radio" name="school">
+            <label for="Engineering" class="radio">School of Engineering Technology</label><br>
+            <input type="radio" id="Health" class="radio" name="school">
+            <label for="Health" class="radio">School of Health Science</label>
+            <br>
+            <label for="Ex" id="ex">Extra:</label>
+            <br>
+            <br>
+            <input type="checkbox" name="cb" id="veteran" class="checkbox">
+            <label for="veteran" class="checkbox">Veteran</label><br>
+            <input type="checkbox" name="cb" id="Transfer Student" class="checkbox">
+            <label for="Transfer Student" class="checkbox">Transfer Student</label><br>
+            <input type="checkbox" name="cb" id="International Student" class="checkbox">
+            <label for="International Student" class="checkbox">International Student</label><br>
+            <p id="para">Program and <br>Other <br>Information you <br>like to share:</p>
+            <textarea name="textarea" cols="30" rows="10" id="TA"></textarea>
+            <p id="filei">Upload your <br>profile picture <br>(JPG, GIF,PNG <br> or TIF File):</p>
+            <input type="file" value="Choose File" id="file" required>
+            <input type="submit" value="Submit" class="button">
+            <input type="reset" value="Reset" class="button">
+        </div>
+    </form>
+</body>
+</html>
